@@ -1,0 +1,263 @@
+/* =========================================
+   Bearing Lifetime Prediction Dashboard
+   ========================================= */
+
+/* Main application background */
+.stApp {
+    background-color: #0e1117;
+}
+
+/* Main content container */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+/* =========================================
+   Sidebar
+   ========================================= */
+
+section[data-testid="stSidebar"] {
+    background-color: #262730;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #ffffff;
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] li {
+    color: #eeeeee;
+}
+
+/* =========================================
+   Main Title
+   ========================================= */
+
+.dashboard-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.dashboard-subtitle {
+    text-align: center;
+    color: #a9abb3;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* =========================================
+   Section Headers
+   ========================================= */
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   Feature Cards
+   ========================================= */
+
+.feature-card {
+    background-color: #1f2129;
+    border: 1px solid #3a3d46;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card:hover {
+    border-color: #6c6f7a;
+}
+
+/* =========================================
+   Prediction Result
+   ========================================= */
+
+.prediction-card {
+    background-color: #1f2129;
+    border: 1px solid #3a3d46;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.prediction-title {
+    color: #a9abb3;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.prediction-value {
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.prediction-unit {
+    color: #a9abb3;
+    font-size: 1rem;
+}
+
+/* =========================================
+   Status
+   ========================================= */
+
+.status-healthy {
+    background-color: #16351f;
+    border: 1px solid #2e8b57;
+    color: #7ee2a8;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.status-warning {
+    background-color: #3a2d12;
+    border: 1px solid #c9972e;
+    color: #f2c96d;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.status-critical {
+    background-color: #3a1717;
+    border: 1px solid #d9534f;
+    color: #ff8c8c;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* =========================================
+   Streamlit Buttons
+   ========================================= */
+
+.stButton > button {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #4b4e58;
+    background-color: #1f2129;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.65rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    border-color: #ffffff;
+    background-color: #2a2d36;
+    color: #ffffff;
+}
+
+/* =========================================
+   Input Fields
+   ========================================= */
+
+.stNumberInput label {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.stNumberInput input {
+    background-color: #262730 !important;
+    color: #ffffff !important;
+    border-radius: 8px;
+}
+
+/* =========================================
+   Metrics
+   ========================================= */
+
+[data-testid="stMetric"] {
+    background-color: #1f2129;
+    border: 1px solid #3a3d46;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #a9abb3;
+}
+
+[data-testid="stMetricValue"] {
+    color: #ffffff;
+}
+
+/* =========================================
+   Dataframes / Tables
+   ========================================= */
+
+[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* =========================================
+   Horizontal Divider
+   ========================================= */
+
+hr {
+    border-color: #3a3d46;
+    margin: 1.5rem 0;
+}
+
+/* =========================================
+   Info / Success / Warning Boxes
+   ========================================= */
+
+.stAlert {
+    border-radius: 10px;
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+
+.dashboard-footer {
+    text-align: center;
+    color: #777a84;
+    font-size: 0.85rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #30333b;
+}
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
+@media (max-width: 768px) {
+    .dashboard-title {
+        font-size: 1.8rem;
+    }
+
+    .dashboard-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .prediction-value {
+        font-size: 2.2rem;
+    }
+}

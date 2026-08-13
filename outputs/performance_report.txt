@@ -1,0 +1,110 @@
+
+==========================================================
+        IMS Bearing Remaining Useful Life Prediction
+==========================================================
+
+Generated On:
+03-08-2026 23:08:53
+
+----------------------------------------------------------
+PROJECT SUMMARY
+----------------------------------------------------------
+
+Project Title:
+Predict Lifetime of a Bearing in Manufacturing Industry
+
+Machine Learning Model:
+Random Forest Regression
+
+Features Used:
+- Mean
+- Standard Deviation
+- RMS
+- Kurtosis
+- Skewness
+- Peak-to-Peak
+
+Target Variable:
+Remaining Useful Life (RUL)
+
+----------------------------------------------------------
+DATASET
+----------------------------------------------------------
+
+Datasets Used:
+
+1st_test
+2nd_test
+3rd_test
+
+Combined Dataset:
+9464 Samples
+
+----------------------------------------------------------
+MODEL PERFORMANCE
+----------------------------------------------------------
+
+Refer evaluation_metrics.csv for latest evaluation metrics.
+
+----------------------------------------------------------
+OUTPUTS GENERATED
+----------------------------------------------------------
+
+✔ Feature CSV Files
+
+✔ Labelled Dataset
+
+✔ Final Dataset
+
+✔ Trained Model (.pkl)
+
+✔ Feature Importance CSV
+
+✔ Feature Importance Graph
+
+✔ Correlation Matrix CSV
+
+✔ Correlation Heatmap
+
+✔ Prediction Results CSV
+
+✔ Actual vs Predicted Graph
+
+✔ Evaluation Metrics CSV
+
+✔ Model Comparison CSV
+
+✔ Model Comparison Graph
+
+----------------------------------------------------------
+PROJECT STATUS
+----------------------------------------------------------
+
+Dataset Processing        ✔ Completed
+
+Feature Extraction        ✔ Completed
+
+RUL Generation            ✔ Completed
+
+Model Training            ✔ Completed
+
+Model Evaluation          ✔ Completed
+
+Visualization             ✔ Completed
+
+Model Saving              ✔ Completed
+
+Report Generation         ✔ Completed
+
+----------------------------------------------------------
+CONCLUSION
+----------------------------------------------------------
+
+The project successfully predicts the Remaining Useful Life
+(RUL) of industrial bearings using vibration signal features
+and a Random Forest Regression model. All required project
+tasks have been completed successfully.
+
+==========================================================
+END OF REPORT
+==========================================================
