@@ -3,6 +3,16 @@ import pandas as pd
 from pathlib import Path
 
 # --------------------------------------------------
+# PAGE CONFIG
+# --------------------------------------------------
+
+st.set_page_config(
+    page_title="Bearing Lifetime Prediction",
+    page_icon="⚙️",
+    layout="wide",
+)
+
+# --------------------------------------------------
 # LOAD CUSTOM CSS
 # --------------------------------------------------
 
@@ -14,23 +24,17 @@ if css_path.exists():
             f"<style>{f.read()}</style>",
             unsafe_allow_html=True
         )
-        
+
+# --------------------------------------------------
+# IMPORT PROJECT MODULES
+# --------------------------------------------------
+
 from utils.load_model import load_trained_model
 from utils.predictor import predict_rul
 from utils.helpers import (
     get_health_status,
     get_status_color,
     format_rul,
-)
-
-# --------------------------------------------------
-# PAGE CONFIG
-# --------------------------------------------------
-
-st.set_page_config(
-    page_title="Bearing Lifetime Prediction",
-    page_icon="⚙️",
-    layout="wide",
 )
 
 # --------------------------------------------------
